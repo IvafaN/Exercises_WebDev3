@@ -8,9 +8,14 @@ class Category extends React.Component {
 
         return (
             <div className='row'>
-                <div className='col s2'>
+                <ul className='cat-nav center-align'>
+                    <li className='cat-link left valign-wrapper'>
+                        <i className='material-icons'>
+
+                        </i>
+                    </li>
                     
-                </div>
+                </ul>
             </div>
         )
     }
@@ -18,10 +23,6 @@ class Category extends React.Component {
 function Category(props){
     // get data from props and use map to build an array of <li>
     // ... code goes here
-    return(
-        <div>
-            {/* Your Code Here */}
-        </div>
-    )
+    data.map
 }
 

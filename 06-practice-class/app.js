@@ -37,6 +37,6 @@ const data = [
 ]
 
 ReactDOM.render(
-    WHAT,
-    WHERE
+    <Category data={data} />,
+    document.getElementById('root')
 );
