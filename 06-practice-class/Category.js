@@ -6,23 +6,20 @@ class Category extends React.Component {
 
     render(){
 
-        return (
-            <div className='row'>
-                <ul className='cat-nav center-align'>
-                    <li className='cat-link left valign-wrapper'>
-                        <i className='material-icons'>
+        const NavLinks = data.map((link, index) => 
+            <li class="cat-link left valign-wrapper">
+                <i class="material-icons">{link.icon}</i>{link.title}
+            </li>
+        )
 
-                        </i>
-                    </li>
-                    
+        return (
+            <div className="row">
+                <ul class="cat-nav center-align">
+                    {NavLinks}
                 </ul>
             </div>
         )
     }
 }
-function Category(props){
-    // get data from props and use map to build an array of <li>
-    // ... code goes here
-    data.map
-}
+
 
